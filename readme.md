@@ -45,3 +45,65 @@ Follow these steps to set up Vybe locally on your machine.
 ```bash
 git clone https://github.com/yash96644/vybe.git
 cd vybe
+
+### 2. Backend Setup
+cd server
+npm install
+
+### Create a .env file inside /server and add:
+
+MONGO_URI=your_mongodb_connection_string
+JWT_SECRET=your_secret_key
+CLOUDINARY_NAME=your_cloudinary_name
+CLOUDINARY_API_KEY=your_cloudinary_api_key
+CLOUDINARY_API_SECRET=your_cloudinary_api_secret
+
+### Run the backend:
+
+npm start
+
+### 3. Frontend Setup
+
+cd ../client
+npm install
+npm run dev
+
+🧩 Folder Structure
+
+vybe/
+├── client/              # React frontend
+│   ├── src/
+│   │   ├── components/  # Reusable UI components
+│   │   ├── pages/       # Main pages (Home, Profile, etc.)
+│   │   ├── context/     # Global state management
+│   │   ├── assets/      # Images, icons
+│   │   └── App.js
+│   └── package.json
+│
+├── server/              # Node.js backend
+│   ├── models/          # Mongoose schemas
+│   ├── routes/          # Express routes
+│   ├── controllers/     # API logic
+│   ├── middleware/      # Auth and error handling
+│   ├── utils/           # Helper functions
+│   ├── server.js        # Entry point
+│   └── package.json
+│
+└── README.md
+
+
+-->  🧑‍💻 Author
+
+Yash Kumar Gupta
+📍 Frontend Developer | MERN Stack Developer
+
+
+-> Made with ❤️ by Yash Gupta
+
+
+---
+
+Would you like me to make it **more aesthetic with emojis, badges, and live demo sections** (like top open-source GitHub projects)?
+
+
+
